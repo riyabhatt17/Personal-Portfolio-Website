@@ -1,0 +1,358 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pridi", serif; /* Default font */
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #e4f9f5; /* Light background color */
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px;
+  background-color: #2cb8b5; /* Navbar background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures navbar stays on top */
+  cursor: pointer;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center navbar items */
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 15px; /* Space between navbar items */
+}
+
+.navbar li a {
+  padding: 0px 30px;
+  text-decoration: none;
+  color: #ffffff; /* Link color */
+  font-size: 1.3em;
+}
+
+.navbar li a:hover {
+  color: #40514e; /* Hover color */
+  text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4f9f5; /* Background color */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 5%;
+}
+
+.header-text {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 5%; /* Space between text and image */
+}
+
+.header-text h1 {
+  font-family: "Pacifico", cursive; /* Custom font */
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: 65px; /* Main heading size */
+  color: #2cb8b5; /* Heading color */
+  margin: 0;
+}
+
+.header-text p {
+  font-size: 1.2em;
+  color: #283e3a; /* Paragraph color */
+  margin: 0;
+}
+
+.headerimg {
+  margin-top: 5%;
+  width: 50%; /* Image width */
+  height: auto;
+  margin-left: 5%; /* Space between image and text */
+}
+
+span {
+  color: #3a5d62; /* Span color */
+  font-family: "Pacifico", cursive; /* Custom font */
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+  position: absolute;
+  z-index: 0; /* Clouds behind other elements */
+}
+
+.cloud1 {
+  position: absolute;
+  right: 300px;
+  top: 60px;
+}
+
+.cloud2 {
+  position: absolute;
+  left: 20px;
+  top: 70px;
+}
+
+/* About Section */
+.about {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 80px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.aboutcol1 {
+  flex-basis: 35%; /* Column width */
+}
+
+.image-container {
+  margin-top: 20%;
+  margin-left: 5%;
+  width: 100%;
+  background-color: #66bfbf; /* Background for image container */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px; /* Rounded corners */
+}
+
+.myimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers container */
+}
+
+.aboutcol2 {
+  flex-basis: 60%; /* Column width */
+}
+
+.subtitle {
+  font-family: "Pacifico", cursive; /* Custom font */
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  font-size: 60px; /* Subtitle size */
+  color: #2cb8b5; /* Subtitle color */
+}
+
+.aboutcol2 p {
+  font-size: 1.2em;
+  color: #283e3a; /* Paragraph color */
+  margin: 0;
+}
+
+/* Projects Section */
+.projects {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 80px 0;
+}
+
+.subtitle1 {
+  font-family: "Pacifico", cursive; /* Custom font */
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 60px; /* Subtitle size */
+  color: #2cb8b5; /* Subtitle color */
+}
+
+h2 {
+  font-family: "Pacifico", cursive; /* Custom font */
+  font-weight: 400;
+  font-style: normal;
+  color: #2cb8b5; /* Heading color */
+  margin: 0;
+  display: block;
+}
+
+.list li {
+  font-size: larger;
+  color: #283e3a; /* List item color */
+}
+
+.projects .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Center content vertically */
+}
+
+.projects .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.projects .project {
+  flex: 1;
+  margin: 20px; /* Space between projects */
+  text-align: center;
+}
+
+.projects .project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Contact Section */
+.contact {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4f9f5; /* Background color */
+}
+
+#contact-header h2 {
+  font-family: "Pacifico", cursive; /* Custom font */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4em; /* Heading size */
+  color: #2cb8b5; /* Heading color */
+  margin: 0;
+  display: block;
+}
+
+#contact-p {
+  color: #2cb8b5; /* Paragraph color */
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+i {
+  color: #3a5d62; /* Icon color */
+  font-size: 30px;
+}
+
+#profile-link {
+  color: #40514e; /* Link color */
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+#contact-links a {
+  margin: 0 15px; /* Space between links */
+}
+
+/* Media Queries for Responsiveness */
+/* For screens up to 1200px wide */
+@media screen and (max-width: 1200px) {
+  .header-content {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .header-text {
+    margin-left: 0;
+    text-align: center; /* Center text */
+  }
+
+  .headerimg {
+    width: 80%; /* Resize image */
+    margin-left: 0;
+  }
+}
+
+/* For screens up to 992px wide */
+@media screen and (max-width: 992px) {
+  .about .row {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .aboutcol1, .aboutcol2 {
+    flex-basis: 100%; /* Full width columns */
+  }
+
+  .projects .row {
+    flex-direction: column; /* Stack projects vertically */
+  }
+}
+
+/* For screens up to 768px wide */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Stack navbar items vertically */
+  }
+
+  .navbar ul li {
+    margin: 10px 0; /* Space between navbar items */
+  }
+
+  .header-text h1 {
+    font-size: 50px; /* Resize heading */
+  }
+
+  .subtitle, .subtitle1 {
+    font-size: 40px; /* Resize subtitles */
+  }
+}
+
+/* For screens up to 576px wide */
+@media screen and (max-width: 576px) {
+  .header-text h1 {
+    font-size: 35px; /* Resize heading */
+  }
+
+  .header-text p {
+    font-size: 1em; /* Resize paragraphs */
+  }
+
+  .headerimg {
+    width: 90%; /* Resize image */
+  }
+
+  .subtitle, .subtitle1 {
+    font-size: 30px; /* Resize subtitles */
+  }
+
+  #contact-header h2 {
+    font-size: 2.5em; /* Resize contact heading */
+  }
+
+  #contact-p {
+    font-size: 1.2rem; /* Resize contact paragraph */
+  }
+}
